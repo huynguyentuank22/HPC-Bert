@@ -34,19 +34,14 @@ For any information on F-DATA don't hesitate to contact us at: francesco.antici9
 Please cite the work as 
 
 ```
-@dataset{antici_2024_11467483,
-  author       = {Antici, Francesco and
-                  Bartolini, Andrea and
-                  Domke, Jens and
-                  Kiziltan, Zeynep and
-                  Yamamoto, Keiji},
-  title        = {{F-DATA: A Fugaku Workload Dataset for Job-centric 
-                   Predictive Modelling in HPC Systems}},
-  month        = jun,
-  year         = 2024,
-  publisher    = {Zenodo},
-  version      = {1.0},
-  doi          = {10.5281/zenodo.11467483},
-  url          = {https://doi.org/10.5281/zenodo.11467483}
+@article{antici2025fdata,
+  title={F-DATA: A Fugaku Workload Dataset for Job-centric Predictive Modelling in HPC Systems},
+  author={Antici, Francesco and Bartolini, Andrea and Domke, Jens and Kiziltan, Zeynep and Yamamoto, Keiji},
+  journal = {Scientific Data},
+  volume={12},
+  pages={1321},
+  year={2025},
+  publisher={Nature Publishing Group},
+  doi={https://doi.org/10.1038/s41597-025-05633-1}
 }
 ```
