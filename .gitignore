@@ -1,8 +1,7 @@
 .DS_Store
 
-data
+data*
 
-data_embedding
+models
 
-data_train
-
+checkpoints
