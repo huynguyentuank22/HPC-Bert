@@ -17,7 +17,7 @@ if __name__ == "__main__":
     os.makedirs(result_path, exist_ok=True)
     
     data_folder = "data_train"
-    emb_folder = "data_embedding_semantic_hpcb"
+    emb_folder = "data_embedding_semantic_hpcb-kmeans"
     os.makedirs(emb_folder, exist_ok=True)
     
     test_yms = ["24_04"]
@@ -32,7 +32,7 @@ if __name__ == "__main__":
     }
 
     # === Only using semantic embeddings ===
-    features = {"hpcb_anon": lambda df: np.vstack(df["embedding_anon"].values)}
+    features = {"hpcb-kmeans_anon": lambda df: np.vstack(df["embedding_anon"].values)}
 
     # === Model candidates ===
     model_candidates = {
@@ -53,7 +53,7 @@ if __name__ == "__main__":
         # Template 2: Tập trung vào Chủ thể/Hành động cơ bản (User–Job–Environment Relation)
         # Mô tả trực tiếp mối quan hệ giữa người dùng (user), công việc (job) và môi trường tính toán (environment).
         # Cấu trúc đơn giản, dễ hiểu, giúp mô hình học được ngữ cảnh cơ bản của hành động “submit”.
-        lambda r: f"The user profile {r['usr']} submitted a computation {r['jnam']} to the environment {r['jobenv_req']}.",
+        # lambda r: f"The user profile {r['usr']} submitted a computation {r['jnam']} to the environment {r['jobenv_req']}.",
                 
         # Template 4: Tập trung vào Đối tượng/Công việc (Job Focus)
         # Nhấn mạnh tính chất của Job và vai trò của User/Environment đối với Job đó.
@@ -62,7 +62,7 @@ if __name__ == "__main__":
 
     # === Load SBERT once ===
     print("Loading SBERT model...")
-    sbert_model = SentenceTransformer('models/finetuned_all-MiniLM-L6-v2')
+    sbert_model = SentenceTransformer('models/finetuned_all-MiniLM-L6-v2_kmeans_triplet')
 
     # === Iterate through each template ===
     for template_idx, template_fn in enumerate(semantic_templates, start=1):
