@@ -8,6 +8,7 @@ import pandas as pd
 import numpy as np
 from sentence_transformers import SentenceTransformer
 import torch
+from catboost import CatBoostClassifier, CatBoostRegressor
 
 if __name__ == "__main__":
     print("Device:", "cuda" if torch.cuda.is_available() else "cpu")
@@ -37,14 +38,16 @@ if __name__ == "__main__":
     # === Model candidates ===
     model_candidates = {
     "classification": {
-        "KNN": KNeighborsClassifier,
-        "RF":  RandomForestClassifier,
-        "XGB": XGBClassifier
+        # "KNN": KNeighborsClassifier,
+        # "RF":  RandomForestClassifier,
+        # "XGB": XGBClassifier,
+        "CatBoost": CatBoostClassifier
     },
     "regression": {
-        "KNN": KNeighborsRegressor,
-        "RF":  RandomForestRegressor,
-        "XGB": XGBRegressor
+        # "KNN": KNeighborsRegressor,
+        # "RF":  RandomForestRegressor,
+        # "XGB": XGBRegressor,
+        "CatBoost": CatBoostRegressor
     }
 }
 
@@ -145,7 +148,7 @@ if __name__ == "__main__":
                 for model_name, model_cls in model_candidates[task_type].items():
                     print(f"▶ Template {template_idx} | {model_name} | {task} ({task_type})")
 
-                    model_instance = model_cls(n_jobs=-1)
+                    model_instance = model_cls(n_jobs=-1) if model_name != "CatBoost" else model_cls(task_type="GPU") if torch.cuda.is_available() else model_cls(thread_count=-1)
                     model_instance.fit(x_train[feat], y_train[task])
                     y_pred = model_instance.predict(x_test[feat])
 
