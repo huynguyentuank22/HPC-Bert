@@ -11,7 +11,7 @@ Phiên bản đã chỉnh sửa:
 from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier, KNeighborsRegressor
 from xgboost import XGBClassifier, XGBRegressor
-from sklearn.metrics import classification_report, mean_absolute_error
+from sklearn.metrics import classification_report, mean_absolute_error, r2_score
 import os
 from tqdm import tqdm
 import pandas as pd
@@ -25,14 +25,17 @@ if __name__ == "__main__":
 
     # === Paths ===
     result_path = "baseline_results"
+    pred_path = "predict_results"
     os.makedirs(result_path, exist_ok=True)
+    os.makedirs(pred_path, exist_ok=True)
     
     data_folder = "data_train"
     emb_folder = "data_embedding_semantic_hpcb-multitask"
     os.makedirs(emb_folder, exist_ok=True)
     
     test_yms = ["24_04"]
-    regression_metric = lambda y_true, y_pred: f"MAE: {mean_absolute_error(y_true, y_pred):.4f}"
+    # regression_metric = lambda y_true, y_pred: f"MAE: {mean_absolute_error(y_true, y_pred):.4f}"
+    regression_metric = lambda y_true, y_pred: f"R2: {r2_score(y_true, y_pred):.4f}"
 
     # === Tasks ===
     tasks = {
@@ -51,7 +54,7 @@ if __name__ == "__main__":
             # "KNN": KNeighborsClassifier,
             # "RF":  RandomForestClassifier,
             # "XGB": XGBClassifier,
-            "CatBoost": CatBoostClassifier
+            # "CatBoost": CatBoostClassifier
         },
         "regression": {
             # "KNN": KNeighborsRegressor,
@@ -149,11 +152,22 @@ if __name__ == "__main__":
                         report = regression_metric(y_test, y_pred)
 
                     result_file = os.path.join(
-                        result_path, f"{model_name}_{feat}_template{template_idx}_{task}.txt"
+                        result_path, f"{model_name}_{feat}_template{template_idx}_{task}_r2.txt"
                     )
                     with open(result_file, "w", encoding="utf-8") as f:
                         f.write(report)
 
                     print(f"✅ Saved result to {result_file}")
+
+                    # === Save predictions for later analysis ===
+                    pred_df = pd.DataFrame({
+                        "y_true": y_test,
+                        "y_pred": y_pred
+                    })
+                    pred_file = os.path.join(
+                        pred_path, f"{model_name}_{feat}_template{template_idx}_{task}_pred.csv"
+                    )
+                    pred_df.to_csv(pred_file, index=False)
+                    print(f"💾 Saved predictions to {pred_file}")
 
     print("\n🎯 All tasks completed successfully!")

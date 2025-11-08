@@ -1,7 +1,7 @@
 from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier, KNeighborsRegressor
 from xgboost import XGBClassifier, XGBRegressor
-from sklearn.metrics import classification_report, mean_absolute_error
+from sklearn.metrics import classification_report, mean_absolute_error, r2_score
 import os 
 from tqdm import tqdm
 import pandas as pd
@@ -25,7 +25,8 @@ if __name__ == "__main__":
     test_yms = ["24_04"] # "23_06", "23_07", "23_08", "23_09", "23_10", "23_11", "23_12", "24_01", "24_02", "24_03",
     
     # Define regression metric
-    regression_metric = lambda y_true, y_pred: f"MAE: {mean_absolute_error(y_true, y_pred):.4f}"
+    # regression_metric = lambda y_true, y_pred: f"MAE: {mean_absolute_error(y_true, y_pred):.4f}"
+    regression_metric = lambda y_true, y_pred: f"R2: {r2_score(y_true, y_pred):.4f}"
     
     # Definition of tasks
     tasks = {
@@ -62,12 +63,12 @@ if __name__ == "__main__":
             # "KNN": KNeighborsClassifier,
             # "RF": RandomForestClassifier,
             # "XGB": XGBClassifier,
-            "CatBoost": CatBoostClassifier
+            # "CatBoost": CatBoostClassifier
         },
         "regression": {
-            # "KNN": KNeighborsRegressor,
-            # "RF": RandomForestRegressor,
-            # "XGB": XGBRegressor,
+            "KNN": KNeighborsRegressor,
+            "RF": RandomForestRegressor,
+            "XGB": XGBRegressor,
             "CatBoost": CatBoostRegressor
         }
     }
@@ -156,7 +157,7 @@ if __name__ == "__main__":
                     report = regression_metric(y_test[task], y_pred)
                 
                 # Save results
-                result_file = os.path.join(result_path, f"{model_name}_{feat}_{task}.txt")
+                result_file = os.path.join(result_path, f"{model_name}_{feat}_{task}_r2.txt")
                 with open(result_file, "w", encoding="utf-8") as f:
                     f.write(report)
                 

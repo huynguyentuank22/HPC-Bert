@@ -1,0 +1,493 @@
+model,technique,task,metric,value
+CatBoost,hpcb-multitask_anon_template1,avgpcon,MAE,29.4884
+CatBoost,hpcb-multitask_anon_template1,avgpcon,R2 Score,0.0854
+CatBoost,hpcb-multitask_anon_template1,duration,MAE,247.0425
+CatBoost,hpcb-multitask_anon_template1,duration,R2 Score,0.1128
+CatBoost,hpcb-multitask_anon_template1,ec,accuracy,0.89
+CatBoost,hpcb-multitask_anon_template1,ec,precision,0.88
+CatBoost,hpcb-multitask_anon_template1,ec,recall,0.75
+CatBoost,hpcb-multitask_anon_template1,ec,f1-score,0.79
+CatBoost,hpcb-multitask_anon_template1,pclass,accuracy,0.76
+CatBoost,hpcb-multitask_anon_template1,pclass,precision,0.68
+CatBoost,hpcb-multitask_anon_template1,pclass,recall,0.63
+CatBoost,hpcb-multitask_anon_template1,pclass,f1-score,0.65
+CatBoost,int_anon,avgpcon,MAE,42.6424
+CatBoost,int_anon,avgpcon,R2 Score,-0.227
+CatBoost,int_anon,duration,MAE,571.7706
+CatBoost,int_anon,duration,R2 Score,-3.0385
+CatBoost,int_anon,ec,accuracy,0.78
+CatBoost,int_anon,ec,precision,0.66
+CatBoost,int_anon,ec,recall,0.68
+CatBoost,int_anon,ec,f1-score,0.67
+CatBoost,int_anon,pclass,accuracy,0.76
+CatBoost,int_anon,pclass,precision,0.68
+CatBoost,int_anon,pclass,recall,0.63
+CatBoost,int_anon,pclass,f1-score,0.64
+CatBoost,sb_anon,avgpcon,MAE,29.9363
+CatBoost,sb_anon,avgpcon,R2 Score,0.1539
+CatBoost,sb_anon,duration,MAE,271.2091
+CatBoost,sb_anon,duration,R2 Score,0.0607
+CatBoost,sb_anon,ec,accuracy,0.89
+CatBoost,sb_anon,ec,precision,0.92
+CatBoost,sb_anon,ec,recall,0.74
+CatBoost,sb_anon,ec,f1-score,0.79
+CatBoost,sb_anon,pclass,accuracy,0.77
+CatBoost,sb_anon,pclass,precision,0.74
+CatBoost,sb_anon,pclass,recall,0.58
+CatBoost,sb_anon,pclass,f1-score,0.58
+CatBoost,sb_anon_template1,avgpcon,MAE,33.7097
+CatBoost,sb_anon_template1,avgpcon,R2 Score,0.1252
+CatBoost,sb_anon_template1,duration,MAE,374.2505
+CatBoost,sb_anon_template1,duration,R2 Score,-0.2904
+CatBoost,sb_anon_template1,ec,accuracy,0.86
+CatBoost,sb_anon_template1,ec,precision,0.89
+CatBoost,sb_anon_template1,ec,recall,0.65
+CatBoost,sb_anon_template1,ec,f1-score,0.68
+CatBoost,sb_anon_template1,pclass,accuracy,0.76
+CatBoost,sb_anon_template1,pclass,precision,0.75
+CatBoost,sb_anon_template1,pclass,recall,0.56
+CatBoost,sb_anon_template1,pclass,f1-score,0.55
+CatBoost,sb_anon_template2,avgpcon,MAE,30.0151
+CatBoost,sb_anon_template2,avgpcon,R2 Score,0.1897
+CatBoost,sb_anon_template2,duration,MAE,253.6238
+CatBoost,sb_anon_template2,duration,R2 Score,0.0703
+CatBoost,sb_anon_template2,ec,accuracy,0.89
+CatBoost,sb_anon_template2,ec,precision,0.91
+CatBoost,sb_anon_template2,ec,recall,0.72
+CatBoost,sb_anon_template2,ec,f1-score,0.77
+CatBoost,sb_anon_template2,pclass,accuracy,0.78
+CatBoost,sb_anon_template2,pclass,precision,0.85
+CatBoost,sb_anon_template2,pclass,recall,0.58
+CatBoost,sb_anon_template2,pclass,f1-score,0.58
+CatBoost,sb_anon_template3,avgpcon,MAE,38.0357
+CatBoost,sb_anon_template3,avgpcon,R2 Score,-0.0399
+CatBoost,sb_anon_template3,duration,MAE,519.3813
+CatBoost,sb_anon_template3,duration,R2 Score,-1.3577
+CatBoost,sb_anon_template3,ec,accuracy,0.8
+CatBoost,sb_anon_template3,ec,precision,0.58
+CatBoost,sb_anon_template3,ec,recall,0.51
+CatBoost,sb_anon_template3,ec,f1-score,0.49
+CatBoost,sb_anon_template3,pclass,accuracy,0.75
+CatBoost,sb_anon_template3,pclass,precision,0.75
+CatBoost,sb_anon_template3,pclass,recall,0.53
+CatBoost,sb_anon_template3,pclass,f1-score,0.49
+CatBoost,sb_anon_template4,avgpcon,MAE,28.66
+CatBoost,sb_anon_template4,avgpcon,R2 Score,0.2115
+CatBoost,sb_anon_template4,duration,MAE,386.8105
+CatBoost,sb_anon_template4,duration,R2 Score,-0.4507
+CatBoost,sb_anon_template4,ec,accuracy,0.89
+CatBoost,sb_anon_template4,ec,precision,0.91
+CatBoost,sb_anon_template4,ec,recall,0.73
+CatBoost,sb_anon_template4,ec,f1-score,0.78
+CatBoost,sb_anon_template4,pclass,accuracy,0.78
+CatBoost,sb_anon_template4,pclass,precision,0.77
+CatBoost,sb_anon_template4,pclass,recall,0.59
+CatBoost,sb_anon_template4,pclass,f1-score,0.59
+CatBoost,sb_anon_template5,avgpcon,MAE,29.6455
+CatBoost,sb_anon_template5,avgpcon,R2 Score,0.2148
+CatBoost,sb_anon_template5,duration,MAE,328.329
+CatBoost,sb_anon_template5,duration,R2 Score,-0.1246
+CatBoost,sb_anon_template5,ec,accuracy,0.89
+CatBoost,sb_anon_template5,ec,precision,0.9
+CatBoost,sb_anon_template5,ec,recall,0.73
+CatBoost,sb_anon_template5,ec,f1-score,0.78
+CatBoost,sb_anon_template5,pclass,accuracy,0.76
+CatBoost,sb_anon_template5,pclass,precision,0.73
+CatBoost,sb_anon_template5,pclass,recall,0.57
+CatBoost,sb_anon_template5,pclass,f1-score,0.56
+CatBoost,sb_anon_template6,avgpcon,MAE,39.236
+CatBoost,sb_anon_template6,avgpcon,R2 Score,-0.0396
+CatBoost,sb_anon_template6,duration,MAE,526.0758
+CatBoost,sb_anon_template6,duration,R2 Score,-1.4553
+CatBoost,sb_anon_template6,ec,accuracy,0.85
+CatBoost,sb_anon_template6,ec,precision,0.77
+CatBoost,sb_anon_template6,ec,recall,0.7
+CatBoost,sb_anon_template6,ec,f1-score,0.72
+CatBoost,sb_anon_template6,pclass,accuracy,0.75
+CatBoost,sb_anon_template6,pclass,precision,0.7
+CatBoost,sb_anon_template6,pclass,recall,0.52
+CatBoost,sb_anon_template6,pclass,f1-score,0.48
+CatBoost,sb_anon_template_full,avgpcon,MAE,24.2239
+CatBoost,sb_anon_template_full,avgpcon,R2 Score,
+CatBoost,sb_anon_template_full,duration,MAE,181.3391
+CatBoost,sb_anon_template_full,duration,R2 Score,
+CatBoost,sb_anon_template_full,ec,accuracy,0.89
+CatBoost,sb_anon_template_full,ec,precision,0.89
+CatBoost,sb_anon_template_full,ec,recall,0.75
+CatBoost,sb_anon_template_full,ec,f1-score,0.79
+CatBoost,sb_anon_template_full,pclass,accuracy,0.76
+CatBoost,sb_anon_template_full,pclass,precision,0.71
+CatBoost,sb_anon_template_full,pclass,recall,0.56
+CatBoost,sb_anon_template_full,pclass,f1-score,0.56
+CatBoost,sb,avgpcon,MAE,37.5122
+CatBoost,sb,avgpcon,R2 Score,0.1007
+CatBoost,sb,duration,MAE,371.271
+CatBoost,sb,duration,R2 Score,-0.3245
+CatBoost,sb,ec,accuracy,0.84
+CatBoost,sb,ec,precision,0.89
+CatBoost,sb,ec,recall,0.59
+CatBoost,sb,ec,f1-score,0.6
+CatBoost,sb,pclass,accuracy,0.74
+CatBoost,sb,pclass,precision,0.6
+CatBoost,sb,pclass,recall,0.52
+CatBoost,sb,pclass,f1-score,0.48
+KNN,hpcb-multitask_anon_template1,avgpcon,MAE,29.9442
+KNN,hpcb-multitask_anon_template1,avgpcon,R2 Score,
+KNN,hpcb-multitask_anon_template1,duration,MAE,279.6859
+KNN,hpcb-multitask_anon_template1,duration,R2 Score,
+KNN,hpcb-multitask_anon_template1,ec,accuracy,0.88
+KNN,hpcb-multitask_anon_template1,ec,precision,0.85
+KNN,hpcb-multitask_anon_template1,ec,recall,0.75
+KNN,hpcb-multitask_anon_template1,ec,f1-score,0.78
+KNN,hpcb-multitask_anon_template1,pclass,accuracy,0.75
+KNN,hpcb-multitask_anon_template1,pclass,precision,0.67
+KNN,hpcb-multitask_anon_template1,pclass,recall,0.63
+KNN,hpcb-multitask_anon_template1,pclass,f1-score,0.64
+KNN,int_anon,avgpcon,MAE,29.3223
+KNN,int_anon,avgpcon,R2 Score,0.1796
+KNN,int_anon,duration,MAE,269.4651
+KNN,int_anon,duration,R2 Score,-0.4858
+KNN,int_anon,ec,accuracy,0.81
+KNN,int_anon,ec,precision,0.69
+KNN,int_anon,ec,recall,0.57
+KNN,int_anon,ec,f1-score,0.58
+KNN,int_anon,pclass,accuracy,0.78
+KNN,int_anon,pclass,precision,0.72
+KNN,int_anon,pclass,recall,0.74
+KNN,int_anon,pclass,f1-score,0.73
+KNN,sb_anon,avgpcon,MAE,24.3645
+KNN,sb_anon,avgpcon,R2 Score,0.2834
+KNN,sb_anon,duration,MAE,312.2561
+KNN,sb_anon,duration,R2 Score,-1.2243
+KNN,sb_anon,ec,accuracy,0.88
+KNN,sb_anon,ec,precision,0.83
+KNN,sb_anon,ec,recall,0.78
+KNN,sb_anon,ec,f1-score,0.8
+KNN,sb_anon,pclass,accuracy,0.68
+KNN,sb_anon,pclass,precision,0.56
+KNN,sb_anon,pclass,recall,0.55
+KNN,sb_anon,pclass,f1-score,0.56
+KNN,sb_anon_template1,avgpcon,MAE,27.2743
+KNN,sb_anon_template1,avgpcon,R2 Score,0.1523
+KNN,sb_anon_template1,duration,MAE,219.7181
+KNN,sb_anon_template1,duration,R2 Score,-0.0826
+KNN,sb_anon_template1,ec,accuracy,0.84
+KNN,sb_anon_template1,ec,precision,0.75
+KNN,sb_anon_template1,ec,recall,0.74
+KNN,sb_anon_template1,ec,f1-score,0.74
+KNN,sb_anon_template1,pclass,accuracy,0.76
+KNN,sb_anon_template1,pclass,precision,0.67
+KNN,sb_anon_template1,pclass,recall,0.6
+KNN,sb_anon_template1,pclass,f1-score,0.61
+KNN,sb_anon_template2,avgpcon,MAE,25.9703
+KNN,sb_anon_template2,avgpcon,R2 Score,0.1961
+KNN,sb_anon_template2,duration,MAE,205.3623
+KNN,sb_anon_template2,duration,R2 Score,-0.0142
+KNN,sb_anon_template2,ec,accuracy,0.85
+KNN,sb_anon_template2,ec,precision,0.76
+KNN,sb_anon_template2,ec,recall,0.74
+KNN,sb_anon_template2,ec,f1-score,0.75
+KNN,sb_anon_template2,pclass,accuracy,0.75
+KNN,sb_anon_template2,pclass,precision,0.65
+KNN,sb_anon_template2,pclass,recall,0.6
+KNN,sb_anon_template2,pclass,f1-score,0.6
+KNN,sb_anon_template3,avgpcon,MAE,46.493
+KNN,sb_anon_template3,avgpcon,R2 Score,-0.5862
+KNN,sb_anon_template3,duration,MAE,275.6632
+KNN,sb_anon_template3,duration,R2 Score,-0.5179
+KNN,sb_anon_template3,ec,accuracy,0.66
+KNN,sb_anon_template3,ec,precision,0.48
+KNN,sb_anon_template3,ec,recall,0.48
+KNN,sb_anon_template3,ec,f1-score,0.48
+KNN,sb_anon_template3,pclass,accuracy,0.7
+KNN,sb_anon_template3,pclass,precision,0.49
+KNN,sb_anon_template3,pclass,recall,0.5
+KNN,sb_anon_template3,pclass,f1-score,0.47
+KNN,sb_anon_template4,avgpcon,MAE,26.6148
+KNN,sb_anon_template4,avgpcon,R2 Score,0.2094
+KNN,sb_anon_template4,duration,MAE,423.5762
+KNN,sb_anon_template4,duration,R2 Score,-2.0133
+KNN,sb_anon_template4,ec,accuracy,0.88
+KNN,sb_anon_template4,ec,precision,0.81
+KNN,sb_anon_template4,ec,recall,0.78
+KNN,sb_anon_template4,ec,f1-score,0.79
+KNN,sb_anon_template4,pclass,accuracy,0.79
+KNN,sb_anon_template4,pclass,precision,0.73
+KNN,sb_anon_template4,pclass,recall,0.75
+KNN,sb_anon_template4,pclass,f1-score,0.74
+KNN,sb_anon_template5,avgpcon,MAE,24.7169
+KNN,sb_anon_template5,avgpcon,R2 Score,0.2522
+KNN,sb_anon_template5,duration,MAE,372.3963
+KNN,sb_anon_template5,duration,R2 Score,-1.9568
+KNN,sb_anon_template5,ec,accuracy,0.87
+KNN,sb_anon_template5,ec,precision,0.8
+KNN,sb_anon_template5,ec,recall,0.77
+KNN,sb_anon_template5,ec,f1-score,0.79
+KNN,sb_anon_template5,pclass,accuracy,0.68
+KNN,sb_anon_template5,pclass,precision,0.56
+KNN,sb_anon_template5,pclass,recall,0.56
+KNN,sb_anon_template5,pclass,f1-score,0.56
+KNN,sb_anon_template6,avgpcon,MAE,46.2993
+KNN,sb_anon_template6,avgpcon,R2 Score,-0.4694
+KNN,sb_anon_template6,duration,MAE,286.2663
+KNN,sb_anon_template6,duration,R2 Score,-0.439
+KNN,sb_anon_template6,ec,accuracy,0.66
+KNN,sb_anon_template6,ec,precision,0.49
+KNN,sb_anon_template6,ec,recall,0.48
+KNN,sb_anon_template6,ec,f1-score,0.48
+KNN,sb_anon_template6,pclass,accuracy,0.7
+KNN,sb_anon_template6,pclass,precision,0.5
+KNN,sb_anon_template6,pclass,recall,0.5
+KNN,sb_anon_template6,pclass,f1-score,0.48
+KNN,sb,avgpcon,MAE,47.1806
+KNN,sb,avgpcon,R2 Score,-0.6833
+KNN,sb,duration,MAE,219.3296
+KNN,sb,duration,R2 Score,-0.4098
+KNN,sb,ec,accuracy,0.72
+KNN,sb,ec,precision,0.62
+KNN,sb,ec,recall,0.66
+KNN,sb,ec,f1-score,0.63
+KNN,sb,pclass,accuracy,0.74
+KNN,sb,pclass,precision,0.6
+KNN,sb,pclass,recall,0.53
+KNN,sb,pclass,f1-score,0.51
+RF,hpcb-multitask_anon_template1,avgpcon,MAE,29.4134
+RF,hpcb-multitask_anon_template1,avgpcon,R2 Score,
+RF,hpcb-multitask_anon_template1,duration,MAE,241.0741
+RF,hpcb-multitask_anon_template1,duration,R2 Score,
+RF,hpcb-multitask_anon_template1,ec,accuracy,0.9
+RF,hpcb-multitask_anon_template1,ec,precision,0.9
+RF,hpcb-multitask_anon_template1,ec,recall,0.75
+RF,hpcb-multitask_anon_template1,ec,f1-score,0.8
+RF,hpcb-multitask_anon_template1,pclass,accuracy,0.76
+RF,hpcb-multitask_anon_template1,pclass,precision,0.68
+RF,hpcb-multitask_anon_template1,pclass,recall,0.63
+RF,hpcb-multitask_anon_template1,pclass,f1-score,0.64
+RF,int_anon,avgpcon,MAE,24.3255
+RF,int_anon,avgpcon,R2 Score,0.3044
+RF,int_anon,duration,MAE,298.0089
+RF,int_anon,duration,R2 Score,-0.8514
+RF,int_anon,ec,accuracy,0.73
+RF,int_anon,ec,precision,0.41
+RF,int_anon,ec,recall,0.46
+RF,int_anon,ec,f1-score,0.43
+RF,int_anon,pclass,accuracy,0.74
+RF,int_anon,pclass,precision,0.57
+RF,int_anon,pclass,recall,0.51
+RF,int_anon,pclass,f1-score,0.45
+RF,sb_anon,avgpcon,MAE,31.8202
+RF,sb_anon,avgpcon,R2 Score,0.098
+RF,sb_anon,duration,MAE,382.9807
+RF,sb_anon,duration,R2 Score,-0.5201
+RF,sb_anon,ec,accuracy,0.89
+RF,sb_anon,ec,precision,0.9
+RF,sb_anon,ec,recall,0.75
+RF,sb_anon,ec,f1-score,0.79
+RF,sb_anon,pclass,accuracy,0.78
+RF,sb_anon,pclass,precision,0.83
+RF,sb_anon,pclass,recall,0.57
+RF,sb_anon,pclass,f1-score,0.56
+RF,sb_anon_template1,avgpcon,MAE,36.6092
+RF,sb_anon_template1,avgpcon,R2 Score,-0.0083
+RF,sb_anon_template1,duration,MAE,567.9892
+RF,sb_anon_template1,duration,R2 Score,-1.5624
+RF,sb_anon_template1,ec,accuracy,0.81
+RF,sb_anon_template1,ec,precision,0.81
+RF,sb_anon_template1,ec,recall,0.52
+RF,sb_anon_template1,ec,f1-score,0.49
+RF,sb_anon_template1,pclass,accuracy,0.75
+RF,sb_anon_template1,pclass,precision,0.85
+RF,sb_anon_template1,pclass,recall,0.52
+RF,sb_anon_template1,pclass,f1-score,0.47
+RF,sb_anon_template2,avgpcon,MAE,33.2892
+RF,sb_anon_template2,avgpcon,R2 Score,0.0767
+RF,sb_anon_template2,duration,MAE,502.3266
+RF,sb_anon_template2,duration,R2 Score,-1.437
+RF,sb_anon_template2,ec,accuracy,0.87
+RF,sb_anon_template2,ec,precision,0.91
+RF,sb_anon_template2,ec,recall,0.66
+RF,sb_anon_template2,ec,f1-score,0.71
+RF,sb_anon_template2,pclass,accuracy,0.78
+RF,sb_anon_template2,pclass,precision,0.86
+RF,sb_anon_template2,pclass,recall,0.57
+RF,sb_anon_template2,pclass,f1-score,0.56
+RF,sb_anon_template3,avgpcon,MAE,37.9765
+RF,sb_anon_template3,avgpcon,R2 Score,-0.0948
+RF,sb_anon_template3,duration,MAE,673.6687
+RF,sb_anon_template3,duration,R2 Score,-2.2323
+RF,sb_anon_template3,ec,accuracy,0.79
+RF,sb_anon_template3,ec,precision,0.45
+RF,sb_anon_template3,ec,recall,0.49
+RF,sb_anon_template3,ec,f1-score,0.45
+RF,sb_anon_template3,pclass,accuracy,0.75
+RF,sb_anon_template3,pclass,precision,0.8
+RF,sb_anon_template3,pclass,recall,0.51
+RF,sb_anon_template3,pclass,f1-score,0.46
+RF,sb_anon_template4,avgpcon,MAE,35.1433
+RF,sb_anon_template4,avgpcon,R2 Score,-0.01
+RF,sb_anon_template4,duration,MAE,454.1673
+RF,sb_anon_template4,duration,R2 Score,-0.8393
+RF,sb_anon_template4,ec,accuracy,0.9
+RF,sb_anon_template4,ec,precision,0.88
+RF,sb_anon_template4,ec,recall,0.78
+RF,sb_anon_template4,ec,f1-score,0.82
+RF,sb_anon_template4,pclass,accuracy,0.78
+RF,sb_anon_template4,pclass,precision,0.84
+RF,sb_anon_template4,pclass,recall,0.58
+RF,sb_anon_template4,pclass,f1-score,0.57
+RF,sb_anon_template5,avgpcon,MAE,33.4288
+RF,sb_anon_template5,avgpcon,R2 Score,0.0567
+RF,sb_anon_template5,duration,MAE,429.2241
+RF,sb_anon_template5,duration,R2 Score,-0.5993
+RF,sb_anon_template5,ec,accuracy,0.85
+RF,sb_anon_template5,ec,precision,0.83
+RF,sb_anon_template5,ec,recall,0.63
+RF,sb_anon_template5,ec,f1-score,0.67
+RF,sb_anon_template5,pclass,accuracy,0.79
+RF,sb_anon_template5,pclass,precision,0.82
+RF,sb_anon_template5,pclass,recall,0.6
+RF,sb_anon_template5,pclass,f1-score,0.6
+RF,sb_anon_template6,avgpcon,MAE,37.9513
+RF,sb_anon_template6,avgpcon,R2 Score,-0.0516
+RF,sb_anon_template6,duration,MAE,515.1813
+RF,sb_anon_template6,duration,R2 Score,-1.2706
+RF,sb_anon_template6,ec,accuracy,0.8
+RF,sb_anon_template6,ec,precision,0.47
+RF,sb_anon_template6,ec,recall,0.5
+RF,sb_anon_template6,ec,f1-score,0.45
+RF,sb_anon_template6,pclass,accuracy,0.74
+RF,sb_anon_template6,pclass,precision,0.61
+RF,sb_anon_template6,pclass,recall,0.51
+RF,sb_anon_template6,pclass,f1-score,0.44
+RF,sb,avgpcon,MAE,39.8253
+RF,sb,avgpcon,R2 Score,-0.1268
+RF,sb,duration,MAE,423.8204
+RF,sb,duration,R2 Score,-0.6445
+RF,sb,ec,accuracy,0.81
+RF,sb,ec,precision,0.8
+RF,sb,ec,recall,0.5
+RF,sb,ec,f1-score,0.45
+RF,sb,pclass,accuracy,0.75
+RF,sb,pclass,precision,0.81
+RF,sb,pclass,recall,0.51
+RF,sb,pclass,f1-score,0.46
+XGB,hpcb-multitask_anon_template1,avgpcon,MAE,28.9171
+XGB,hpcb-multitask_anon_template1,avgpcon,R2 Score,
+XGB,hpcb-multitask_anon_template1,duration,MAE,251.8398
+XGB,hpcb-multitask_anon_template1,duration,R2 Score,
+XGB,hpcb-multitask_anon_template1,ec,accuracy,0.89
+XGB,hpcb-multitask_anon_template1,ec,precision,0.88
+XGB,hpcb-multitask_anon_template1,ec,recall,0.75
+XGB,hpcb-multitask_anon_template1,ec,f1-score,0.79
+XGB,hpcb-multitask_anon_template1,pclass,accuracy,0.76
+XGB,hpcb-multitask_anon_template1,pclass,precision,0.67
+XGB,hpcb-multitask_anon_template1,pclass,recall,0.63
+XGB,hpcb-multitask_anon_template1,pclass,f1-score,0.64
+XGB,int_anon,avgpcon,MAE,48.7113
+XGB,int_anon,avgpcon,R2 Score,-0.4273
+XGB,int_anon,duration,MAE,735.55
+XGB,int_anon,duration,R2 Score,-4.3356
+XGB,int_anon,ec,accuracy,0.8
+XGB,int_anon,ec,precision,0.68
+XGB,int_anon,ec,recall,0.7
+XGB,int_anon,ec,f1-score,0.69
+XGB,int_anon,pclass,accuracy,0.75
+XGB,int_anon,pclass,precision,0.66
+XGB,int_anon,pclass,recall,0.6
+XGB,int_anon,pclass,f1-score,0.6
+XGB,sb_anon,avgpcon,MAE,34.0035
+XGB,sb_anon,avgpcon,R2 Score,0.0253
+XGB,sb_anon,duration,MAE,284.6041
+XGB,sb_anon,duration,R2 Score,-0.1397
+XGB,sb_anon,ec,accuracy,0.89
+XGB,sb_anon,ec,precision,0.9
+XGB,sb_anon,ec,recall,0.75
+XGB,sb_anon,ec,f1-score,0.8
+XGB,sb_anon,pclass,accuracy,0.76
+XGB,sb_anon,pclass,precision,0.7
+XGB,sb_anon,pclass,recall,0.58
+XGB,sb_anon,pclass,f1-score,0.58
+XGB,sb_anon_template1,avgpcon,MAE,34.7678
+XGB,sb_anon_template1,avgpcon,R2 Score,0.0191
+XGB,sb_anon_template1,duration,MAE,537.4713
+XGB,sb_anon_template1,duration,R2 Score,-1.6336
+XGB,sb_anon_template1,ec,accuracy,0.84
+XGB,sb_anon_template1,ec,precision,0.79
+XGB,sb_anon_template1,ec,recall,0.65
+XGB,sb_anon_template1,ec,f1-score,0.68
+XGB,sb_anon_template1,pclass,accuracy,0.75
+XGB,sb_anon_template1,pclass,precision,0.7
+XGB,sb_anon_template1,pclass,recall,0.54
+XGB,sb_anon_template1,pclass,f1-score,0.52
+XGB,sb_anon_template2,avgpcon,MAE,30.2259
+XGB,sb_anon_template2,avgpcon,R2 Score,0.1685
+XGB,sb_anon_template2,duration,MAE,393.3581
+XGB,sb_anon_template2,duration,R2 Score,-0.6643
+XGB,sb_anon_template2,ec,accuracy,0.88
+XGB,sb_anon_template2,ec,precision,0.85
+XGB,sb_anon_template2,ec,recall,0.73
+XGB,sb_anon_template2,ec,f1-score,0.77
+XGB,sb_anon_template2,pclass,accuracy,0.76
+XGB,sb_anon_template2,pclass,precision,0.69
+XGB,sb_anon_template2,pclass,recall,0.56
+XGB,sb_anon_template2,pclass,f1-score,0.54
+XGB,sb_anon_template3,avgpcon,MAE,41.266
+XGB,sb_anon_template3,avgpcon,R2 Score,-0.162
+XGB,sb_anon_template3,duration,MAE,529.7402
+XGB,sb_anon_template3,duration,R2 Score,-2.0017
+XGB,sb_anon_template3,ec,accuracy,0.77
+XGB,sb_anon_template3,ec,precision,0.6
+XGB,sb_anon_template3,ec,recall,0.58
+XGB,sb_anon_template3,ec,f1-score,0.59
+XGB,sb_anon_template3,pclass,accuracy,0.72
+XGB,sb_anon_template3,pclass,precision,0.55
+XGB,sb_anon_template3,pclass,recall,0.51
+XGB,sb_anon_template3,pclass,f1-score,0.48
+XGB,sb_anon_template4,avgpcon,MAE,34.7636
+XGB,sb_anon_template4,avgpcon,R2 Score,-0.0359
+XGB,sb_anon_template4,duration,MAE,417.406
+XGB,sb_anon_template4,duration,R2 Score,-0.7874
+XGB,sb_anon_template4,ec,accuracy,0.89
+XGB,sb_anon_template4,ec,precision,0.86
+XGB,sb_anon_template4,ec,recall,0.76
+XGB,sb_anon_template4,ec,f1-score,0.8
+XGB,sb_anon_template4,pclass,accuracy,0.76
+XGB,sb_anon_template4,pclass,precision,0.69
+XGB,sb_anon_template4,pclass,recall,0.58
+XGB,sb_anon_template4,pclass,f1-score,0.58
+XGB,sb_anon_template5,avgpcon,MAE,33.2909
+XGB,sb_anon_template5,avgpcon,R2 Score,0.0685
+XGB,sb_anon_template5,duration,MAE,359.4593
+XGB,sb_anon_template5,duration,R2 Score,-0.5101
+XGB,sb_anon_template5,ec,accuracy,0.86
+XGB,sb_anon_template5,ec,precision,0.83
+XGB,sb_anon_template5,ec,recall,0.69
+XGB,sb_anon_template5,ec,f1-score,0.73
+XGB,sb_anon_template5,pclass,accuracy,0.76
+XGB,sb_anon_template5,pclass,precision,0.72
+XGB,sb_anon_template5,pclass,recall,0.58
+XGB,sb_anon_template5,pclass,f1-score,0.58
+XGB,sb_anon_template6,avgpcon,MAE,44.3854
+XGB,sb_anon_template6,avgpcon,R2 Score,-0.3687
+XGB,sb_anon_template6,duration,MAE,777.0248
+XGB,sb_anon_template6,duration,R2 Score,-4.0121
+XGB,sb_anon_template6,ec,accuracy,0.78
+XGB,sb_anon_template6,ec,precision,0.63
+XGB,sb_anon_template6,ec,recall,0.63
+XGB,sb_anon_template6,ec,f1-score,0.63
+XGB,sb_anon_template6,pclass,accuracy,0.73
+XGB,sb_anon_template6,pclass,precision,0.59
+XGB,sb_anon_template6,pclass,recall,0.53
+XGB,sb_anon_template6,pclass,f1-score,0.52
+XGB,sb,avgpcon,MAE,36.2939
+XGB,sb,avgpcon,R2 Score,0.0879
+XGB,sb,duration,MAE,461.2847
+XGB,sb,duration,R2 Score,-1.056
+XGB,sb,ec,accuracy,0.79
+XGB,sb,ec,precision,0.59
+XGB,sb,ec,recall,0.53
+XGB,sb,ec,f1-score,0.53
+XGB,sb,pclass,accuracy,0.84
+XGB,sb,pclass,precision,0.84
+XGB,sb,pclass,recall,0.71
+XGB,sb,pclass,f1-score,0.74

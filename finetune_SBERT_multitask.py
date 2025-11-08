@@ -31,7 +31,8 @@ def set_seed(seed):
 
 def build_text_from_template(df):
     """Áp dụng template để sinh câu mô tả job"""
-    template4 = lambda r: f"Job {r['jnam']}, which will be executed by {r['usr']}, requires exclusive access to the infrastructure {r['jobenv_req']}."
+    # template4 = lambda r: f"Job {r['jnam']}, which will be executed by {r['usr']}, requires exclusive access to the infrastructure {r['jobenv_req']}."
+    template4 = lambda r: f"Job {r['jnam']} submitted by user {r['usr']} required {r['cnumr']} cores, allocated {r['cnumat']} cores, utilized {r['cnumut']} cores with {r['nnumr']} nodes requested, {r['nnuma']} NUMA nodes allocated, {r['nnumu']} nodes used, priority level {r['pri']}, requested frequency {r['freq_req']} MHz, allocated frequency {r['freq_alloc']} MHz, memory size limit {r['mszl']:.2f} GB, allocated memory {r['msza']} bytes, maximum memory used {r['mmszu']:.2f} GB, achieving {r['flops']:.2f} FLOPS, {r['mbwidth']:.2f} MB/s bandwidth, operational intensity {r['opint']:.2f}, CPU utilization {r['uctmut']:.2f}%, system CPU time {r['sctmut']:.2f}%, user+system CPU time {r['usctmut']:.2f}%, average power consumption {r['avgpcon']:.2f} watts, minimum power {r['minpcon']:.2f} watts, maximum power {r['maxpcon']:.2f} watts, energy consumption {r['econ']:.2f} units, average idle time {r['idle_time_ave']:.2f} seconds, performance metrics perf1={r['perf1']:.2f}, perf2={r['perf2']:.2f}, perf3={r['perf3']:.2f}, perf4={r['perf4']:.2f}, perf5={r['perf5']:.2f}, perf6={r['perf6']:.2f}, elapsed time {r['elpl']:.2f} seconds, duration {r['duration']:.2f} seconds, classified as {r['pclass']} workload, executed in {r['jobenv_req']} environment, scheduled on {r['schedsdt']}, started at {r['sdt']}, ended at {r['edt']}, with exit code {r['ec']} and final state {r['exit state']}."
     df["text"] = df.apply(template4, axis=1)
     return df
 
