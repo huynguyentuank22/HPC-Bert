@@ -43,45 +43,51 @@ if __name__ == "__main__":
         "KNN": KNeighborsClassifier,
         "RF":  RandomForestClassifier,
         "XGB": XGBClassifier,
-        # "CatBoost": CatBoostClassifier
+        "CatBoost": CatBoostClassifier
     },
     "regression": {
         "KNN": KNeighborsRegressor,
         "RF":  RandomForestRegressor,
         "XGB": XGBRegressor,
-        # "CatBoost": CatBoostRegressor
+        "CatBoost": CatBoostRegressor
     }
 }
 
     # === Define multiple semantic templates ===
     semantic_templates = [
-        # # Template 1: Cấu trúc bị động rút gọn (Compact Passive Construction)
-        # # Diễn đạt hành động “submit” ở dạng bị động nhằm đa dạng hóa ngữ pháp và trật tự thông tin.
-        # # Câu mô tả ngắn gọn, đưa "Job" lên đầu để nhấn mạnh đối tượng công việc, đồng thời vẫn giữ đủ ba thực thể: user – job – environment.
-        # lambda r: f"Job submitted by user {r['usr']} with name {r['jnam']} requiring environment {r['jobenv_req']}.",
+        # Template 1: Cấu trúc bị động rút gọn (Compact Passive Construction)
+        # Diễn đạt hành động “submit” ở dạng bị động nhằm đa dạng hóa ngữ pháp và trật tự thông tin.
+        # Câu mô tả ngắn gọn, đưa "Job" lên đầu để nhấn mạnh đối tượng công việc, đồng thời vẫn giữ đủ ba thực thể: user – job – environment.
+        lambda r: f"Job submitted by user {r['usr']} with name {r['jnam']} requiring environment {r['jobenv_req']}.",
 
-        # # Template 2: Tập trung vào Chủ thể/Hành động cơ bản (User–Job–Environment Relation)
-        # # Mô tả trực tiếp mối quan hệ giữa người dùng (user), công việc (job) và môi trường tính toán (environment).
-        # # Cấu trúc đơn giản, dễ hiểu, giúp mô hình học được ngữ cảnh cơ bản của hành động “submit”.
-        # lambda r: f"The user profile {r['usr']} submitted a computation {r['jnam']} to the environment {r['jobenv_req']}.",
+        # Template 2: Tập trung vào Chủ thể/Hành động cơ bản (User–Job–Environment Relation)
+        # Mô tả trực tiếp mối quan hệ giữa người dùng (user), công việc (job) và môi trường tính toán (environment).
+        # Cấu trúc đơn giản, dễ hiểu, giúp mô hình học được ngữ cảnh cơ bản của hành động “submit”.
+        lambda r: f"The user profile {r['usr']} submitted a computation {r['jnam']} to the environment {r['jobenv_req']}.",
         
-        # # Template 3: Tập trung vào Ngữ cảnh/Môi trường (Environment Focus)
-        # # Nhấn mạnh rằng môi trường được yêu cầu cho một tác vụ cụ thể của người dùng.
-        # lambda r: f"The high-priority computational environment {r['jobenv_req']} was specifically requested by user {r['usr']} for running the job named {r['jnam']}.",
+        # Template 3: Tập trung vào Ngữ cảnh/Môi trường (Environment Focus)
+        # Nhấn mạnh rằng môi trường được yêu cầu cho một tác vụ cụ thể của người dùng.
+        lambda r: f"The high-priority computational environment {r['jobenv_req']} was specifically requested by user {r['usr']} for running the job named {r['jnam']}.",
         
-        # # Template 4: Tập trung vào Đối tượng/Công việc (Job Focus)
-        # # Nhấn mạnh tính chất của Job và vai trò của User/Environment đối với Job đó.
-        # lambda r: f"Job {r['jnam']}, which will be executed by {r['usr']}, requires exclusive access to the infrastructure {r['jobenv_req']}.",
+        # Template 4: Tập trung vào Đối tượng/Công việc (Job Focus)
+        # Nhấn mạnh tính chất của Job và vai trò của User/Environment đối với Job đó.
+        lambda r: f"Job {r['jnam']}, which will be executed by {r['usr']}, requires exclusive access to the infrastructure {r['jobenv_req']}.",
         
-        # # Template 5: Mối quan hệ Hành động & Liên kết (Action & Association)
-        # # Dùng các động từ mạnh hơn để mô tả hành động lập lịch/chạy.
-        # lambda r: f"The scheduling system recorded that {r['usr']} is deploying job {r['jnam']} onto the {r['jobenv_req']} partition.",
+        # Template 5: Mối quan hệ Hành động & Liên kết (Action & Association)
+        # Dùng các động từ mạnh hơn để mô tả hành động lập lịch/chạy.
+        lambda r: f"The scheduling system recorded that {r['usr']} is deploying job {r['jnam']} onto the {r['jobenv_req']} partition.",
         
-        # # Template 6: Cú pháp bị động (Passive Voice)
-        # # Thử nghiệm các cấu trúc câu khác để buộc mô hình học các phụ thuộc khác.
-        # lambda r: f"The hardware configuration {r['jobenv_req']} is being utilized by job {r['jnam']} which was initialized by {r['usr']}.",
+        # Template 6: Cú pháp bị động (Passive Voice)
+        # Thử nghiệm các cấu trúc câu khác để buộc mô hình học các phụ thuộc khác.
+        lambda r: f"The hardware configuration {r['jobenv_req']} is being utilized by job {r['jnam']} which was initialized by {r['usr']}.",
 
-        lambda r: f"Job {r['jnam']} submitted by user {r['usr']} required {r['cnumr']} cores, allocated {r['cnumat']} cores, utilized {r['cnumut']} cores with {r['nnumr']} nodes requested, {r['nnuma']} NUMA nodes allocated, {r['nnumu']} nodes used, priority level {r['pri']}, requested frequency {r['freq_req']} MHz, allocated frequency {r['freq_alloc']} MHz, memory size limit {r['mszl']:.2f} GB, allocated memory {r['msza']} bytes, maximum memory used {r['mmszu']:.2f} GB, achieving {r['flops']:.2f} FLOPS, {r['mbwidth']:.2f} MB/s bandwidth, operational intensity {r['opint']:.2f}, CPU utilization {r['uctmut']:.2f}%, system CPU time {r['sctmut']:.2f}%, user+system CPU time {r['usctmut']:.2f}%, average power consumption {r['avgpcon']:.2f} watts, minimum power {r['minpcon']:.2f} watts, maximum power {r['maxpcon']:.2f} watts, energy consumption {r['econ']:.2f} units, average idle time {r['idle_time_ave']:.2f} seconds, performance metrics perf1={r['perf1']:.2f}, perf2={r['perf2']:.2f}, perf3={r['perf3']:.2f}, perf4={r['perf4']:.2f}, perf5={r['perf5']:.2f}, perf6={r['perf6']:.2f}, elapsed time {r['elpl']:.2f} seconds, duration {r['duration']:.2f} seconds, classified as {r['pclass']} workload, executed in {r['jobenv_req']} environment, scheduled on {r['schedsdt']}, started at {r['sdt']}, ended at {r['edt']}, with exit code {r['ec']} and final state {r['exit state']}."
+        lambda r: (
+            f"Job {r['jnam']} (ID {r['jid']}), submitted by user {r['usr']}, requested {r['cnumr']} cores "
+            f"and {r['nnumr']} nodes with a priority level of {r['pri']}. "
+            f"The job was submitted at {r['adt']} and inserted into the queue at {r['qdt']}. "
+            f"It requested a CPU frequency of {r['freq_req']} MHz and a memory limit of {r['mszl']:.2f} GB, "
+            f"running in the {r['jobenv_req']} environment with an elapsed time limit of {r['elpl']:.2f} seconds. "
+        )
     ]
 
     # === Load SBERT once ===
@@ -109,6 +115,7 @@ if __name__ == "__main__":
             ym = os.path.basename(data_path).split(".parquet")[0]
 
             emb_save_path = os.path.join(emb_folder, f"{ym}_template{template_idx}.parquet")
+            # emb_save_path = os.path.join(emb_folder, f"{ym}_template_full.parquet")
 
             if os.path.exists(emb_save_path):
                 emb_df = pd.read_parquet(emb_save_path)
@@ -161,12 +168,12 @@ if __name__ == "__main__":
                     else:
                         report = regression_metric(y_test[task], y_pred)
 
-                    # result_file = os.path.join(
-                    #     result_path, f"{model_name}_{feat}_template{template_idx}_{task}.txt"
-                    # )
                     result_file = os.path.join(
-                        result_path, f"{model_name}_{feat}_template_full_{task}.txt"
+                        result_path, f"{model_name}_{feat}_template{template_idx}_{task}.txt"
                     )
+                    # result_file = os.path.join(
+                    #     result_path, f"{model_name}_{feat}_template_full_{task}.txt"
+                    # )
                     with open(result_file, "w", encoding="utf-8") as f:
                         f.write(report)
 
@@ -177,12 +184,12 @@ if __name__ == "__main__":
                         "y_true": y_test[task],
                         "y_pred": y_pred
                     })
-                    # pred_file = os.path.join(
-                    #     pred_path, f"{model_name}_{feat}_template{template_idx}_{task}_pred.csv"
-                    # )
                     pred_file = os.path.join(
-                        pred_path, f"{model_name}_{feat}_template_full_{task}_pred.csv"
+                        pred_path, f"{model_name}_{feat}_template{template_idx}_{task}_pred.csv"
                     )
+                    # pred_file = os.path.join(
+                    #     pred_path, f"{model_name}_{feat}_template_full_{task}_pred.csv"
+                    # )
                     pred_df.to_csv(pred_file, index=False)
                     print(f"💾 Saved predictions to {pred_file}")
 

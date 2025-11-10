@@ -35,9 +35,9 @@ CatBoost,sb_anon_template6,avgpcon,MAE,39.236
 CatBoost,sb_anon_template6,duration,MAE,526.0758
 CatBoost,sb_anon_template6,ec,accuracy,0.85
 CatBoost,sb_anon_template6,pclass,accuracy,0.75
-CatBoost,sb_anon_template_full,avgpcon,MAE,24.2239
-CatBoost,sb_anon_template_full,duration,MAE,181.3391
-CatBoost,sb_anon_template_full,ec,accuracy,0.89
+CatBoost,sb_anon_template_full,avgpcon,MAE,32.4274
+CatBoost,sb_anon_template_full,duration,MAE,270.265
+CatBoost,sb_anon_template_full,ec,accuracy,0.79
 CatBoost,sb_anon_template_full,pclass,accuracy,0.76
 CatBoost,sb,avgpcon,MAE,37.5122
 CatBoost,sb,duration,MAE,371.271

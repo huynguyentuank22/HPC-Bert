@@ -1,0 +1,5 @@
+model,technique,task,metric,value
+CatBoost,sb_anon_template_full,avgpcon,MAE,32.4274
+CatBoost,sb_anon_template_full,duration,MAE,270.265
+CatBoost,sb_anon_template_full,ec,accuracy,0.79
+CatBoost,sb_anon_template_full,pclass,accuracy,0.76
