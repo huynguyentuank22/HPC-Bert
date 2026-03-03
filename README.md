@@ -1,47 +1,17 @@
-# F-DATA
-F-DATA: A Fugaku Workload Dataset for Job-centric Predictive Modelling in HPC Systems
+# Fine-Tuned Sentence-BERT for HPC Job Outcome Prediction via Textual Feature Embedding
 
-This repository contains the scripts and documentation for the F-DATA, available in Zenodo [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11467483.svg)](https://doi.org/10.5281/zenodo.11467483).
+This repository contains the source code for the paper **Fine-Tuned Sentence-BERT for HPC Job Outcome Prediction via Textual Feature Embedding**, published at HPCAsia 2026.
 
-## Instruction on how to load the data 
+## Citation
 
-The files of F-DATA are saved as `.parquet` files. It is possible to load such files as dataframes by leveraging the `pandas` APIs, after installing `pyarrow` (`pip install pyarrow`). A single file can be loaded as follows:
-
-```
-# Importing pandas library
-import pandas as pd 
-
-# Read the 21_01.parquet file in a dataframe format
-df = pd.read_parquet("21_01.parquet")
-df.head()
-```
-
-## Repository structure 
-
-- `baseline_experiments.py`: The script to execute ML predictive modelling on the F-DATA.
-- `generate_plots.py`: The script to generate a series of plots.
-- `requirements.txt`: The python dependencies to execute all the scripts in the repository.
-- `docs`: The folder contains some documentation of the final dataset, such as the job feature list and description.
-- `plots` : The folder contains the plots of the whole F-DATA, as well as of the single splits that can be found in Zenodo.
-- `generation_scripts`: The folder contains the scripts used to anonymize the data and generate the derived features.
-
-## Contact us 
-
-For any information on F-DATA don't hesitate to contact us at: francesco.antici98[at]gmail.com.
-
-## Cite us 
-
-Please cite the work as 
+If you use this code in your research, please cite:
 
 ```
-@article{antici2025fdata,
-  title={F-DATA: A Fugaku Workload Dataset for Job-centric Predictive Modelling in HPC Systems},
-  author={Antici, Francesco and Bartolini, Andrea and Domke, Jens and Kiziltan, Zeynep and Yamamoto, Keiji},
-  journal = {Scientific Data},
-  volume={12},
-  pages={1321},
-  year={2025},
-  publisher={Nature Publishing Group},
-  doi={https://doi.org/10.1038/s41597-025-05633-1}
+@inproceedings{hai2026fine,
+  title={Fine-Tuned Sentence-BERT for HPC Job Outcome Prediction via Textual Feature Embedding},
+  author={Hai, Thanh Hoang Le and Tuan, Huy Nguyen and Dang, Bao Tran and Thuong, Bao Vo and Thoai, Nam},
+  booktitle={Proceedings of the Supercomputing Asia and International Conference on High Performance Computing in Asia Pacific Region Workshops},
+  pages={378--387},
+  year={2026}
 }
 ```
