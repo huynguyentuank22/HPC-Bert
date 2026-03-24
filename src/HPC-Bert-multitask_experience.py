@@ -34,8 +34,7 @@ if __name__ == "__main__":
     os.makedirs(emb_folder, exist_ok=True)
     
     test_yms = ["24_04"]
-    # regression_metric = lambda y_true, y_pred: f"MAE: {mean_absolute_error(y_true, y_pred):.4f}"
-    regression_metric = lambda y_true, y_pred: f"R2: {r2_score(y_true, y_pred):.4f}"
+    regression_metric = lambda y_true, y_pred: f"MAE: {mean_absolute_error(y_true, y_pred):.4f}"
 
     # === Tasks ===
     tasks = {
@@ -51,15 +50,15 @@ if __name__ == "__main__":
     # === Model candidates ===
     model_candidates = {
         "classification": {
-            # "KNN": KNeighborsClassifier,
-            # "RF":  RandomForestClassifier,
-            # "XGB": XGBClassifier,
-            # "CatBoost": CatBoostClassifier
+            "KNN": KNeighborsClassifier,
+            "RF":  RandomForestClassifier,
+            "XGB": XGBClassifier,
+            "CatBoost": CatBoostClassifier
         },
         "regression": {
-            # "KNN": KNeighborsRegressor,
-            # "RF":  RandomForestRegressor,
-            # "XGB": XGBRegressor,
+            "KNN": KNeighborsRegressor,
+            "RF":  RandomForestRegressor,
+            "XGB": XGBRegressor,
             "CatBoost": CatBoostRegressor
         }
     }
@@ -133,7 +132,7 @@ if __name__ == "__main__":
                 else:
                     y_train += y_values
 
-            # === Train 3 model (KNN, RF, XGB) ===
+            # === Train 4 model (KNN, RF, XGB) ===
             task_type = task_info["type"]
             for feat in features:
                 for model_name, model_cls in model_candidates[task_type].items():

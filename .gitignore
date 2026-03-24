@@ -1,11 +1,19 @@
 .DS_Store
 
-data*
+data_*
 
-models
+data/*
+!data/.gitkeep
+
+models/*
+!models/.gitkeep
+
+notebooks/something.ipynb
 
 checkpoints
 
 catboost_info
 
 ___pycache___
+
+tmp

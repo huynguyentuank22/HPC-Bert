@@ -60,10 +60,10 @@ if __name__ == "__main__":
     # Available ML models
     model_candidates = {
         "classification": {
-            # "KNN": KNeighborsClassifier,
-            # "RF": RandomForestClassifier,
-            # "XGB": XGBClassifier,
-            # "CatBoost": CatBoostClassifier
+            "KNN": KNeighborsClassifier,
+            "RF": RandomForestClassifier,
+            "XGB": XGBClassifier,
+            "CatBoost": CatBoostClassifier
         },
         "regression": {
             "KNN": KNeighborsRegressor,
