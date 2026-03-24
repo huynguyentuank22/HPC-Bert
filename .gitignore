@@ -17,3 +17,5 @@ catboost_info
 ___pycache___
 
 tmp
+
+baseline_results/temp
